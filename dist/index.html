@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="msg-container hidden h-full min-h-[50vh] w-full bg-[#ef476f] text-[#ffd166] text-[5vmin] overflow-y-hidden">
+        <div class="inner h-[50vh] w-full flex flex-col justify-center items-center">
+        <p id="msg">Congratulation! Winner is X </p>
+        <button class="newgame p-[10px] border-none rounded-xl text-[30px] bg-[#06d6a0] text-white cursor-pointer">New Game</button>
+    </div>
+    </div>
+    <main class=" h-screen w-full bg-[#f6f4d2] flex items-center flex-col overflow-y-hidden mx-auto my-0">
+        <h2 class="text-[8vmin] mt-5">Tic Tac Toe</h2>
+        <p class="text-[25px] bg-[rgb(107,203,34)] text-[azure] p-[9px] rounded-[15px]">It’s now <span class="text-[#ffff3f] text-[29px] font-semibold">X</span>’s turn!</p>
+        <div class="game-container mt-[5vmin] flex flex-wrap justify-center items-center w-[30%] h-[50%] gap-x-[13px]">
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+            <button class="box text-[9vmin] hover:bg-[#ef233c] w-[15vmin] h-[15vmin] bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black]"></button>
+        </div>
+        <button class="reset p-[10px] text-[20px] border-none rounded-xl mt-[20px] text-white bg-[#ef233c] cursor-pointer">Reset now</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
