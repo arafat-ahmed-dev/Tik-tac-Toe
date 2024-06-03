@@ -23,6 +23,15 @@ const disablebox = () =>{
         box.disabled = true;
     });
 }
+
+const toggleColor = (box) => {
+    if (box.textContent === "X") {
+        box.style.color = "red"; // Change color for 'X'
+    } else if (box.textContent === "O") {
+        box.style.color = "white"; // Change color for 'O'
+    }
+};
+
 const showWinner = (winner) =>{
     msg.innerText = `Congratulation! The winner is ${winner}`
     msgcontainer.style.display = "block";
@@ -37,10 +46,12 @@ box.forEach((box) => {
     box.addEventListener("click", () => {
         if (currentPlayer) {
             box.textContent = "X";
+            toggleColor(box);
             currentPlayer = false;
             turn.textContent = `O`
         } else {
             box.textContent = "O";
+            toggleColor(box);
             currentPlayer = true;
             turn.textContent = `X`
         }
