@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div class="msg-container hidden h-full min-h-[50vh] w-full bg-[#ef476f] text-[#ffd166] text-[6vmin] overflow-y-hidden">
-        <div class="inner h-[50vh] w-full flex flex-col justify-center items-center">
+    <div class="msg-container hidden">
+        <div>
         <p id="msg" class=" pb-3">Congratulation! Winner is X </p>
-        <button class="newgame p-[8px] border-none rounded-xl text-[30px] bg-[#06d6a0] text-white cursor-pointer">New Game</button>
+        <button class="newgame">New Game</button>
     </div>
     </div>
-    <main class=" h-screen w-full bg-[#f6f4d2] flex items-center flex-col overflow-y-hidden mx-auto my-0">
-        <h2 class="text-[8vmin] mt-5">Tic Tac Toe</h2>
-        <p class="text-[25px] bg-[rgb(107,203,34)] text-[azure] p-[9px] rounded-[15px]">It’s now <span class="text-[#ffff3f] text-[29px] font-semibold">X</span>’s turn!</p>
-        <div class="game-container mt-[5vmin] grid grid-rows-3 grid-cols-3 justify-center items-center w-[80%] h-[45%] gap-x-[25px] lg:min-w-[30%] lg:min-h-[60%] md:max-w-[55%] md:max-h-[30%] ">
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
-            <button class="box text-4xl hover:bg-[#ef233c] min-w-24 min-h-24 bg-[#06d6a0] border-none rounded-md text-white cursor-pointer shadow-[0_0_6px_black] lg:w-[17vmin] lg:h-[17vmin] md:min-w-20 md:min-h-20"></button>
+    <main>
+        <h2 class="text-[8vmin] mt-5 font-extrabold">Tic Tac Toe</h2>
+        <p>It’s now <span>X</span>’s turn!</p>
+        <div class="game-container">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
         </div>
-        <button class="reset p-[10px] text-[20px] border-none rounded-xl mt-[20px] text-white bg-[#ef233c] cursor-pointer">Reset now</button>
+        <button class="reset">Reset now</button>
     </main>
     <script src="script.js"></script>
 </body>
